@@ -1,0 +1,16 @@
+{
+  "site_title":"RTMP Monitoring",
+  "http_server_port":9991,
+  "rtmp_server_refresh":3000,
+  "rtmp_server_timeout":15000,
+  "rtmp_server_url":"http://39.107.125.189/stat.xml",
+  "rtmp_server_stream_url":"rtmp://39.107.125.189/myapp/",
+  "rtmp_server_control_url":"http://39.107.125.189/control",
+  "session_secret_key":"change_me_random",
+  "username":"admin",
+  "password":"admin",
+  "language":"en",
+  "template":"default",
+  "login_template":"login",
+  "version":"1.0.2"
+}
