@@ -1,18 +1,10 @@
-// var express = require("express");
-// var session = require('express-session');
+var express = require("express");
 var request = require('request');
-// var bodyParser = require('body-parser');
 var parseString = require('xml2js').parseString;
 var config = require('./config.json');
-// var language = require('./language/'+config.language+'.json');
-// var app = express();
-// app.use(express.static('public'));
-// app.use(bodyParser.urlencoded({extended: false}));
-// var server = app.listen(config.http_server_port);
-// var server = require('http').createServer(app);
-var server = require('http').createServer();
-// var io = require('socket.io').listen(server);
-var io = require('socket.io').listen(config.http_server_port);
+var app = express();
+var server = require('http').createServer(app).listen(config.http_server_port);
+var io = require('socket.io').listen(server);
 var os = require("os");
 
 function cpuAverage() {
