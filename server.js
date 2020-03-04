@@ -57,7 +57,7 @@ setInterval(function(){
         io.emit('error', {"error":true});
     }
 
-    parseString(xml,function (err, result) {
+    parseString(xml,{explicitArray : false},function (err, result) {
 
         console.log(result)
 
